@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color:  #dde4f4;
+                
+            }
+            
+            .form{
+                width: 25%;
+                background-color:  #f0f7ff;
+                padding: 3%;
+                border-radius: 10px;
+            }
+            
+            .form h1{
+                text-align: center;
+                color:green;
+            }
+            
+            .form input[type="number"]{
+                width: 97%;
+                padding: 5px;
+                margin-bottom: 4%;
+                border-radius: 5px;
+            }
+            
+            .form input[type="radio"]{
+                padding: 5px;
+                margin-bottom: 4%;
+            }
+            
+            .form input[type="submit"]{
+                padding: 15px;
+                margin: 4% 0;
+                width: 100%;
+                font-size: 20px;
+                color: white;
+                background-color: #3e4684;
+                border-radius: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <form class="form" action="calculate">
+            <h1>Calculator VIP PRO</h1> 
+            Num1 <br>
+            <input type="number" name="num1"/> <br>
+            Num2 <br>
+            <input type="number" name="num2"/> <br>
+            Addition: <input type="radio" name="operation" value="+" /> <br>
+            Subtraction: <input type="radio" name="operation" value="-" /> <br>
+            Multiplication <input type="radio" name="operation" value="*" /> <br>
+            Division: <input type="radio" name="operation" value=":" /> <br>
+            <input type="submit" value="SUBMIT" />
+        </form>
+    </body>
+</html>
